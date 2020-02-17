@@ -35,7 +35,7 @@ node {
   
   stage('Pushing DockerImage to DockerHub') {
 	  docker.withRegistry('', 'docker' ) {
-		    sh label: '', script: 'docker push iambhascker13/capstoneproject:$BUILD_NUMBER'
+		    sh label: '', script: 'docker push iambhascker13/mydocker:$BUILD_NUMBER'
 		  }
    
   }
