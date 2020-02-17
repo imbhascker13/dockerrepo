@@ -44,7 +44,7 @@ node {
   	input "Start provisioning the production server?"
   }
   stage('Downstream Build -- Docker Deployment'){
-	 build 'ansible-terraform'
+	 build 'ansi-terri'
 	}
 //}	-----------dir end---------  
 
