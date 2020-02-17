@@ -3,7 +3,7 @@ node {
   notify('Job Started') 
   
   environment {
-    registry = "iambhascker13/capstoneproject"
+    registry = "iambhascker13/mydocker"
     registryCredential = 'docker'
   }
 
@@ -34,7 +34,7 @@ node {
   }
   
   stage('Pushing DockerImage to DockerHub') {
-	  docker.withRegistry('', 'charan-dockerhub' ) {
+	  docker.withRegistry('', 'docker' ) {
 		    sh label: '', script: 'docker push iambhascker13/capstoneproject:$BUILD_NUMBER'
 		  }
    
