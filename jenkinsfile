@@ -21,7 +21,7 @@ node {
             def downloadSpec = """{
             "files": [
             {
-                "pattern": "capstoneproject/capstoneproject-0.0.1-SNAPSHOT.war",
+                "pattern": "Bikes/Bikes-0.0.1-SNAPSHOT.war",
                 "target": "./capstoneproject.war"
             }
             ]
