@@ -21,8 +21,8 @@ node {
             def downloadSpec = """{
             "files": [
             {
-                "pattern": "Bikes/Bikes-0.0.1-SNAPSHOT.war",
-                "target": "./capstoneproject.war"
+                "pattern": "travels/TravelBooking-0.0.1-SNAPSHOT.war",
+                "target": "./travelbooking.war"
             }
             ]
             }"""
