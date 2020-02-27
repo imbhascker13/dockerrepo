@@ -40,7 +40,7 @@ node {
   	input "Start provisioning the production server?"
   }
   stage('Downstream Build -- Docker Deployment'){
-	 build 'terraformrepo'
+	 build 'ansi-terri'
 	} 
 
  notify('Job Completed')   
