@@ -12,10 +12,6 @@ node {
    git 'https://github.com/imbhascker13/dockerrepo.git'
   }
     
- //def project_path="capstoneproject/capstoneproject/"
- 
-// dir(project_path) {
-    
   stage('Download package from JFrog') {
             def server= Artifactory.server 'Artifactory'
             def downloadSpec = """{
@@ -45,8 +41,7 @@ node {
   }
   stage('Downstream Build -- Docker Deployment'){
 	 build 'ansi-terri'
-	}
-//}	-----------dir end---------  
+	} 
 
  notify('Job Completed')   
 } catch (err) {
